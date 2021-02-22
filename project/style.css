@@ -1,0 +1,205 @@
+@media (min-width: 768px) {
+    .navbar-brand
+        {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        text-transform: uppercase;
+        
+        font-weight: bold;
+        position: relative;
+        margin: 30px 0 60px;
+    }
+    h2::after {
+        content: "";
+        width: 200px;
+        position: absolute;
+        margin: 0 auto;
+        height: 2px;
+        background: #db584e;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        opacity: .8;
+    }
+    .col-center {
+        margin: 0 auto;
+        float: none !important;
+    }
+    .carousel {
+        margin: 50px auto;
+        padding: 0 70px;
+    }
+    .carousel-item {
+        color: #999;
+        font-size: 14px;
+        text-align: center;
+        overflow: hidden;
+        min-height: 290px;
+    }
+    .carousel .item .img-box {
+        width: 135px;
+        height: 135px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+    }
+    .carousel .img-box img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+    }
+    .carousel .testimonial {
+        padding: 30px 0 10px;
+    }
+    .carousel .overview {	
+        font-style: italic;
+    }
+    .carousel .overview b {
+        text-transform: uppercase;
+        color: #db584e;
+    }
+    .carousel .carousel-control {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        top: 50%;
+        background: none;
+    }
+    .carousel-control i {
+        font-size: 68px;
+        line-height: 42px;
+        position: absolute;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+    }
+    .carousel .carousel-indicators {
+        bottom: -40px;
+    }
+    .carousel-indicators li, .carousel-indicators li.active {
+        width: 10px;
+        height: 10px;
+        margin: 1px 3px;
+        border-radius: 50%;
+    }
+    .carousel-indicators li {	
+        background: #999;
+        border-color: transparent;
+        box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+    }
+    .carousel-indicators li.active {	
+        background: #555;		
+        box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+    }
+
+
+
+
+
+    
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 1170px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #24262b;
+        padding: 70px 0;
+    }
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+    /*responsive*/
+    @media(max-width: 767px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+    
+
+    .vertical-center {
+        min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 100vh; /* These two lines are counted as one :-)       */
+      
+        display: flex;
+        align-items: center;
+      }
